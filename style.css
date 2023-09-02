@@ -1,0 +1,25 @@
+.jumbotron {
+    display: flex;
+    align-items: center;
+    background-image: url('images/background3.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    min-width: 100vw;
+    min-height: calc(100vh - 140px);
+    text-shadow: 0.25px 0.25px 0.25px #000000;
+  }
+
+.jumbotron h2 {
+    padding: 20px;
+}
+
+a {
+    padding: 0 20px;
+    margin: 0;
+  }
+
+header .row {
+  display: flex;
+  align-items: center;
+}
