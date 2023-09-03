@@ -1,16 +1,18 @@
-.jumbotron {
+.main {
     display: flex;
     align-items: center;
     background-image: url('images/background3.jpg');
     background-size: cover;
     background-position: center center;
     color: #ffffff;
-    min-width: 100vw;
-    min-height: calc(100vh - 140px);
+    min-width: 95vw;
+    min-height: 95vh;
     text-shadow: 0.25px 0.25px 0.25px #000000;
+    border: 5px solid #926930;
+    box-shadow: 0 0 5px #926930; 
   }
 
-.jumbotron h2 {
+.main h2 {
     padding: 20px;
 }
 
@@ -19,7 +21,14 @@ a {
     margin: 0;
   }
 
-header .row {
+header, footer {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+body {
+  background-color: #b8915f;
+  font-family: 'Press Start 2P', cursive;
 }
