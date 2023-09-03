@@ -32,3 +32,34 @@ body {
   background-color: #b8915f;
   font-family: 'Press Start 2P', cursive;
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-photo {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+h1 {
+  display: inline-block;
+}
+/*
+@media screen and (max-width: 768px) {
+  header, footer {
+    flex-direction: column;
+    text-align: center;
+  }
+ 
+  footer a {
+    margin-bottom: 10px;
+  }
+  header a {
+    margin-bottom: 10px;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+}*/
