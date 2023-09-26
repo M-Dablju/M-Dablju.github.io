@@ -55,6 +55,10 @@ h2 {
   margin-top: 0%;
 }
 
+.centered-heading {
+  text-align: center;
+}
+
 .button {
   margin-right: 20px;
 }
@@ -83,6 +87,10 @@ nav {
   justify-content: center;
 }
 
+.me-photo {
+  margin-top: 20px;
+}
+
 .about-intro {
   display: flex;
   flex-direction: column;
@@ -91,9 +99,52 @@ nav {
   padding: 20px;
 }
 
+.about-hobby {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.image-and-text-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-and-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.left {
+  flex-direction: row-reverse; 
+  padding-right: 20px;
+}
+
+.right {
+  flex-direction: row; 
+}
+
+.image {
+  margin: 0 10px; 
+  --s: 7px; /* control the size */
+  padding: var(--s);
+  border: calc(2*var(--s)) solid #0000;
+  outline: 1px solid #000;
+  outline-offset: calc(-1*var(--s));
+  background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#000 0);
+}
+
+.image-and-text p {
+  width: auto; 
+  padding-right: 20px;
+}
+
 .experience-column,
 .education-column {
-  flex: 1; /* Equal width for both columns */
+  flex: 1;
   padding: 20px;
   border: 1px solid #ccc;
   margin: 10px;
@@ -106,15 +157,23 @@ nav {
   justify-content: space-between; 
 }
 
-.job-date {
-  margin: 0px;
+.about-title {
+  margin-bottom: 0px;
+}
+
+.about-date {
+  margin-top: 0px;
+}
+
+.about-main li {
+  font-size: 15px;
 }
 
 .quest {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('images/adventure1.jpg');
+  background-image: url('images/adventure1smol.jpg');
   background-size: cover;
   background-position: center center;
   color: #ffffff;
@@ -143,6 +202,14 @@ nav {
 
   .about-main {
     flex-direction: column;
+  }
+  .image-and-text {
+    flex-direction: column; 
+    text-align: center;
+}
+  .image-and-text p {
+    width: 100%;
+    padding-right: 20px;
   }
 
   .experience-column,
